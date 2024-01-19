@@ -69,7 +69,7 @@ fun Unitconverter () {
     val oConversionFactor= remember{ mutableStateOf(1.000) }
     fun convertUnits() {
         val inputValueDouble=inputValue.toDoubleOrNull()?: 0.0  // elvis operator smart very short if statemnet  qwe-->0.0
-        val result=(inputValueDouble * conversionFactor.value *100.0/oConversionFactor.value).roundToInt()/100.00
+        val result=(inputValueDouble * conversionFactor.value *100.0/oConversionFactor.value).roundToInt()
         outputValue=result.toString()
 
     }
